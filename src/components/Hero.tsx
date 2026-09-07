@@ -14,6 +14,8 @@ import {
 import { motion } from "framer-motion";
 
 function Hero() {
+  const resumeUrl = `${import.meta.env.BASE_URL}Prerna-Varade-Resume.pdf`;
+
   return (
     <section id="home" className="hero">
 
@@ -47,7 +49,7 @@ function Hero() {
 
           {/* DOWNLOAD RESUME */}
           <a
-            href="/Prerna-Varade-Resume.pdf"
+            href={resumeUrl}
             download="Prerna-Varade-Resume.pdf"
             className="resume-button"
           >
@@ -78,6 +80,7 @@ function Hero() {
         {/* SOCIAL MEDIA LINKS */}
         <div className="hero-social-links">
 
+          {/* GITHUB */}
           <a
             href="https://github.com/varadeprerna"
             target="_blank"
@@ -87,8 +90,9 @@ function Hero() {
             <FaGithub size={22} />
           </a>
 
+          {/* LINKEDIN */}
           <a
-            href="https://www.linkedin.com/in/prerna-varade/"
+            href="https://www.linkedin.com/in/prernavarade/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit my LinkedIn profile"
@@ -103,9 +107,11 @@ function Hero() {
       {/* RIGHT PROFILE IMAGE */}
       <div className="hero-decoration">
 
+        {/* BACKGROUND CIRCLES */}
         <div className="decoration-circle circle-one"></div>
         <div className="decoration-circle circle-two"></div>
 
+        {/* PROFILE IMAGE */}
         <div className="hero-image-container">
 
           <div className="hero-image-glow"></div>
